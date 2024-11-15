@@ -5,36 +5,42 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Kỹ Năng",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Thiết Kế Canvas</li>
+        <li>Edit Video</li>
+        <li>Tư Vấn Khách Hàng</li>
+        <li>Youtube</li>
+        <li>Discord</li>
+        <li>Website Blog</li>
       </ul>
     ),
   },
   {
-    title: "Education",
+    title: "Giáo Dục",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Học Vấn 8/12</li>
+        <li> Có Hiểu Biết Sử Dụng Máy Tính</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
+    title: "Bản Thân",
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Name : Huỳnh Tấn Hiếu</li>
+        <li>Sinh Năm : 12/09/2006</li>
+        <li>Địa Chỉ : 490 Trần Thủ Độ, Điện Nam Bắc, Điện Bàn, Quảng Nam</li>
+        <li>Youtube : 5K5 Sub</li>
+        <li>Discord : 9K Member</li>
+        <li>Sở Thích : Trở Thành CEO Cho Website Nào Đó</li>
+        <li>Cha : Huỳnh Tấn Tâm</li>
+        <li>Mẹ : Đi Từ Nhỏ ( Không Biết )</li>
       </ul>
     ),
   },
@@ -57,12 +63,8 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Tôi Là Huỳnh Tấn Hiếu, Hiện Tại Tôi Đang Tự Xây Dựng Thương Hiệu Riêng Cho Mình Tự Làm Youtube & Discord. Tôi Có Kinh Nghiệm Với Tư Vấn Khách Hàng, Sáng Tạo Nội Dung Video, Có Khả Năng Thiết Kế Canvas, Edit Video Capcut Và 1 Chút Làm Website Blog
+            Tuy Nhiên Tôi Học Vấn Không Cao, Nhưng Tiếp Xúc Máy Tính Rất Sớm Và Kinh Doanh Bán Hàng Qua Game Tốt Nên Tôi Rất Giỏi Về Việc Tôi Đã Nêu Bên Trên.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -70,21 +72,21 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Kỹ Năng{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Giáo Dục{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
-              Certifications{" "}
+              Thông Tin Bản Thân{" "}
             </TabButton>
           </div>
           <div className="mt-8">
